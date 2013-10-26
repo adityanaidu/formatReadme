@@ -7,7 +7,7 @@ fret no more. You have come to the right place. formatReadme takes a text
 file and formats it to fit in a 80 character screen. The usage is simple
 
 ```
-./formatReadme <text file name>
+./formatReadme <text file>
 ```
 
 Eg.
@@ -16,5 +16,5 @@ Eg.
 ./formatReadme README
 ```
 
-The new formatted file - new-<oldName> - is created in the same directory as 
+The new formatted file - new-\{oldName\} - is created in the same directory as 
 the old file. Please visually inspect the created file for sanity.
