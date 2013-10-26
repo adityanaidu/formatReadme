@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+import os
 
 out_line = []
 out_file = None
@@ -24,7 +25,9 @@ def fix_file(file_name):
     with open(file_name, "r") as f:
         icontent = f.readlines()
     
-    out_file = open('new-README', "w")
+    in_file = os.path.basename(file_name)
+    in_dir = os.path.dirname(os.path.abspath(file_name))
+    out_file = open(in_dir + os.sep +'new-' + in_file , "w")
     out_line = []
     out_line_char_num = 0
 
